@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-
 function App(props) {
+  const [ usuario, setUsuario ] = useState('');
   return (
   <>
-    <h1>{ props.title } { props.user }</h1>
-    <input name="usuario" id="usuario" className="usuarioInput" placeholder="usuário do Github" />
+    <p>{ usuario }</p>
+    <input className="usuarioInput" placeholder="usuário do Github" onChange={e => setUsuario(e.target.value)} />
     <button type="button">Pesquisar</button>
   </>
   );
