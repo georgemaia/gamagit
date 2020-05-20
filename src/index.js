@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Repositories from './Repositories';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App title="Hello" user="Gama Academy" />
-  </React.StrictMode>,
+  
+  <App />,
   document.getElementById('root')
 );
 
