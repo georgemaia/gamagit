@@ -1,14 +1,15 @@
 import React from 'react';
+import * as S from './styled';
 
 export default function Repositories() {
     return (
-        <>
-            <h1>Repositórios</h1>
-            <ul>
-                <li>Repositório 01</li>
-                <li>Repositório 02</li>
-                <li>Repositório 03</li>
-            </ul>
-        </>
+        <S.Container>
+            <S.Title>Repositórios</S.Title>
+            <S.List>
+                <S.ListItem>Repositório 01</S.ListItem>
+                <S.ListItem>Repositório 02</S.ListItem>
+                <S.ListItem>Repositório 03</S.ListItem>
+            </S.List>
+        </S.Container>
     )
 }
