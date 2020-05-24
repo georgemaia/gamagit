@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import * as S from './styled';
+import { useHistory } from 'react-router-dom';
 
 function App(props) {
+  const history = useHistory();
   const [ usuario, setUsuario ] = useState('');
 
   function handlePesquisa() {
@@ -12,7 +14,9 @@ function App(props) {
       repositories.map((repository) => {
         repositoriesName.push(repository.name);
       });
-      localStorage.setItem(repositoriesName, JSON.stringify(repositoriesName));
+      localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));     
+      // salva o string no storage local
+      history.push('/repositories');  // adiciona o endereço repositories no histórico
     });
   }
   
