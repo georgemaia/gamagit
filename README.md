@@ -1,6 +1,6 @@
 # GamaGit
 
-Aplicação em React acessando a API do githug via axios.
+Aplicação em React acessando a API do githug via axios. Exibe os repositórios públicos do usuário.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
