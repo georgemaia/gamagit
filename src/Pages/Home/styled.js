@@ -4,8 +4,8 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;        /* centraliza */
+    justify-content: center;    /* centraliza */
 `;
 
 export const Input = styled.input`
