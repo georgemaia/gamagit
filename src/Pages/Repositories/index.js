@@ -15,6 +15,7 @@ export default function Repositories() {
                 localStorage.clear();
             } else {
                 history.push('/');
+                // se não possuir o nome do repositório, retorne a tela inicial
             }
         }, []);
 
